@@ -1,0 +1,36 @@
+package day2;
+
+import java.util.Scanner;
+
+public class operators {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enter the number =");
+		int a=sc.nextInt();
+		a=-a;
+		System.out.print("after unary minus = " +a);//unary minus
+		
+		System.out.println("\nEnter the number =");
+		int b=sc.nextInt();
+		System.out.println("after unary plus = " +b);//unary plus
+		// TODO Auto-generated method stub
+		
+		
+		System.out.print("Enter the number =");
+		int c=sc.nextInt();
+		int num=c;
+		c=++c;
+		num=num++;
+		System.out.println("after increment="+c);//prefix
+		System.out.println("after increment="+num);//postfix
+
+		System.out.print("Enter the number =");
+		int d=sc.nextInt();
+		d=--d;
+		System.out.println("after decrement="+d);
+		
+
+	}
+
+}
