@@ -22,6 +22,7 @@ public class ReplaceString {
 		System.out.println("Enter string : ");
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
+        sc.close();
         String arr[] = str.split(" ");
         String newstr = "";
         //System.out.println(arr.length);
@@ -29,8 +30,7 @@ public class ReplaceString {
         int pos;
         for(int i=0;i<arr.length;i++) {
             if(isPalindrome(arr[i])) {
-                //System.out.println(arr[i]);
-                //pos = str.indexOf(arr[i]);
+                
                 newstr += " ";
                 for(int j=0;j<arr[i].length();j++)
                     newstr += "*";

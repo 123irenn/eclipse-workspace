@@ -13,11 +13,9 @@ public class Rev {
 		 Scanner sc = new Scanner(System.in);
 	        System.out.println("Enter the string : ");
 	        String str = sc.nextLine();
+	        sc.close();
 	        String[] arr = str.split("((?=\\\\.)|(?<=\\\\.)|(?=\\\\s)|(?<=\\\\s))");
-	        //System.out.println(arr.length);
-	        //for(int i=0;i<arr.length;i++)
-	            //System.out.println(arr[i]);
-	        //String newstr = "";
+	        
 	        for(int i=0;i<arr.length;i++)
 	            System.out.print(reverse(arr[i]));
 	            //newstr += reverse(arr[i]);
