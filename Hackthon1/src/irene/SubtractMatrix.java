@@ -34,7 +34,7 @@ public class SubtractMatrix {
 			}
 		}
 		
-		System.out.println("Resultant matrix:");
+		//subtraction
 		for(i=0;i<row;i++)
 		{
 			for(j=0;j<col;j++)
@@ -47,8 +47,9 @@ public class SubtractMatrix {
 		{
 			for(j=0;j<col;j++)
 			{
-				System.out.println(diff[i][j]);
+				System.out.print(diff[i][j]+" ");
 			}
+			System.out.println();
 		}
 
 		

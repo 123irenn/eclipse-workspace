@@ -18,7 +18,7 @@ public class BinaryString {
 		}
 		System.out.println("Enter the value to find:");
 		String x=sc.next();
-		int f=0;
+		/*int f=0;
 		int l=4;
 		int m=(f+l)/2;
 		 while( f <= l )
@@ -40,11 +40,12 @@ public class BinaryString {
 		 if (flag==0)
 		 {
 			 System.out.println("Element Not found");
-		 }
+		 }*/
 		   
 		   
 		// TODO Auto-generated method stub
 
 	}
+	}
 
-}
+
