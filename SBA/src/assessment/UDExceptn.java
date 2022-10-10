@@ -1,5 +1,8 @@
 package assessment;
- class Candidate
+
+import java.util.Scanner;
+
+class Candidate
 {
 	 private String name;
 	 private String gender;
@@ -30,8 +33,39 @@ package assessment;
  }
 
 public class UDExceptn {
+	public static Candidate getCandidateDetails() throws InvalidSalaryException{
+		Scanner sc=new Scanner(System.in);
+		Candidate obj=new Candidate();
+		 System.out.println("Enter the candidate details\nName");
+	        String name = sc.nextLine();
+	       obj.setName(name);
+	        System.out.println("Gender");
+	        String gender = sc.next();
+	        obj.setGender(gender);
+	        System.out.println("Expected Salary");
+	        double expectedSalary = sc.nextDouble();
+	        
+	        if(expectedSalary<10000)
+	            throw new InvalidSalaryException("Registration Failed.Salary cannot be less than 10000.");
+	        else
+	        {
+	            obj.setExpectedSalary(expectedSalary);
+	            return obj;
+	        }
+	    }
+		
+	
 
 	public static void main(String[] args) {
+		   try
+	        {
+			   UDExceptn.getCandidateDetails();
+	            System.out.println("Registration Successful");        
+	        }
+	        catch(InvalidSalaryException ise){
+	            System.out.println(ise.getMessage());
+	        }
+	    
 		// TODO Auto-generated method stub
 
 	}
