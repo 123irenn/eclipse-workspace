@@ -92,7 +92,8 @@ public class AccountMani {
 
 	public static void main(String[] args) {
 		Customer c=new Customer(101,"Irene","abcd@gmail.com");
-		SavingsAccount s= new SavingsAccount(1000,1001,customer,500);
+		SavingsAccount s= new SavingsAccount(500,1001,c,1000);
+		System.out.println(s.withdraw(200));
 		// TODO Auto-generated method stub
 
 	}
